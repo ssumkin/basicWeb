@@ -1,0 +1,1 @@
+# exampleType-A-2

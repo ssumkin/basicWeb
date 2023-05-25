@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/splide-3.3.0/dist/css/splide.min.css">
+    <script src="./public/splide-3.3.0/dist/js/splide.min.js"></script>
+
+    <style>
+        #content {
+            width: 500px;
+            height: 300px;
+            background-color: red;
+        }
+
+        .splide {
+            width: 100%;
+            height: 200px;
+        }
+
+        .splide__track {
+            width: 100%;
+            height: 100%;
+        }       
+    </style>
+</head>
+<body>
+    <div id="content">
+
+        <div class="splide"> 
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide">splide1</li>
+                      <li class="splide__slide">splide2</li>
+                      <li class="splide__slide">splide3</li>
+                  </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        let splide = new Splide( '.splide' , {
+            type    : 'loop', 
+            autoplay: true
+        });
+        splide.mount();
+
+    </script>
+</body>
+</html>
